@@ -1,0 +1,125 @@
+ /* Hero section */
+.welcome-bg {
+    background-image: url('../img/todo.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-bg-overlay {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+    
+/* Sfondo pagina iniziale */
+.welcome-bg {
+    background-image: url('../img/todo.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Overlay per rendere il testo leggibile */
+.welcome-bg-overlay {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modalità notte */
+body.dark-mode {
+    background-color: #121212 !important; /* sfondo scuro */
+    color: #e0e0e0; /* testo chiaro */
+}
+
+/* Navbar, card e elementi principali */
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .card-body,
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    border-color: #333;
+}
+
+/* Testi */
+body.dark-mode .text-primary {
+    color: #8ab4f8 !important;
+}
+
+body.dark-mode .text-secondary,
+body.dark-mode .text-muted,
+body.dark-mode .form-label,
+body.dark-mode .form-control::placeholder {
+    color: #b0b0b0 !important;
+}
+
+/* Form, input, alert */
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .input-group-text,
+body.dark-mode .alert-info {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+/* Pulsanti */
+body.dark-mode .btn-outline-primary {
+    color: #8ab4f8;
+    border-color: #8ab4f8;
+}
+
+/* Overlay welcome */
+body.dark-mode .welcome-bg-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Badge personalizzati (opzionale) */
+body.dark-mode .badge.bg-warning {
+    background-color: #ffa000 !important;
+    color: #000;
+}
+
+body.dark-mode .badge.bg-info {
+    background-color: #0288d1 !important;
+    color: #fff;
+}
+
+body.dark-mode .badge.bg-success {
+    background-color: #388e3c !important;
+    color: #fff;
+}
+
+body.dark-mode .badge.bg-danger {
+    background-color: #c62828 !important;
+    color: #fff;
+}
+
+/* Placeholder leggibili */
+body.dark-mode ::placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+#theme-toggle {
+  width: 120px;   /* larghezza fissa */
+  height: 30px;   /* altezza fissa */
+}
+
+/* CSS aggiuntivo per mobile */
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    flex-direction: column;       /* verticali, come Bootstrap vuole di default */
+    justify-content: flex-end;    /* allinea a destra se vuoi */
+    gap: 0.5rem;                  /* piccolo spazio tra i bottoni */
+  }
+
+  .navbar-nav .nav-item {
+    margin-top: 0.5rem;           /* margine tra i bottoni */
+    margin-bottom: 0;             /* rimuove margine verticale extra */
+  }
+}
