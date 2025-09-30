@@ -1,5 +1,6 @@
 Per poter utilizzare questa applicazione  è necessario creare un db , io ho utilizzato PHPMYADMIN e chiamarlo DbProgetto
-creare le tue tabelle dell'app che sono questo deu query
+creare le tue tabelle dell'app che sono questo due query:
+
 CREATE TABLE IF NOT EXISTS users(
 id INT AUTO_INCREMENT PRIMARY KEY,
 username VARCHAR(50) NOT NULL,
